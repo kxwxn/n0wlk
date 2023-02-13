@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 250px;
+}
+
+.img-box {
+    width: 476.25px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.nav-bar {
+    padding-top: 30px;
+}
+
+#root {
+    padding-top: 80px;
+}
+
+
+/* .marquee-component {
+    font-size: 50px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 4rem;
+    letter-spacing: 10px;
+} */
+
+.marquee-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    animation: flow 5000ms linear infinite;
+}
+
+@keyframes flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.floating-cart {
+    color: #222;
+    z-index: 1000;
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    top: 120px;
+    float: right;
+    right: 90px;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: 1px 2px 10px #555;
+    border-radius: 100%;
+    cursor: pointer;
+    background-image: url(/pics/img_source/cart.gif);
+    background-size: contain, cover;
+    background-color: #222;
+}
